@@ -1,5 +1,6 @@
 .git
 .venv
+.devpath
 __pycache__
 **/__pycache__
 *.pyc

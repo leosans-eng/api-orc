@@ -13,7 +13,7 @@ Pré-requisito: [Docker Desktop](https://www.docker.com/products/docker-desktop/
 
 ```bat
 copy .env.example .env
-REM Edite .env: SECRET_KEY e ADMIN_PASSWORD
+REM Edite .env: SECRET_KEY, ADMIN_PASSWORD e (recomendado) POSTGRES_PASSWORD
 
 run_dev.bat
 ```
@@ -41,13 +41,13 @@ No Windows Defender Firewall, liberar **TCP 8000** para redes privadas. Confirma
 
 Fluxo típico: **Postgres no WSL** + **API no Windows**.
 
-1. No WSL (uma vez / quando reiniciar o PC), na pasta `api`:
+1. No WSL (uma vez / quando reiniciar o PC), na pasta deste repositório:
    ```bash
    docker compose up -d db
    # se a API do Compose estiver ocupando a porta 8000:
    docker compose stop api
    ```
-2. No Windows, na pasta `api`:
+2. No Windows, na mesma pasta:
    ```bat
    run_local.bat
    ```
