@@ -37,7 +37,7 @@ Desktops ORC: URL `http://IP_DO_SERVIDOR:8000`.
 
 No Windows Defender Firewall, liberar **TCP 8000** para redes privadas. Confirmar que os clientes usam o IPv4 da LAN do servidor.
 
-## Desenvolvimento local (PC do Léo — sem Docker Desktop no Windows, com WSL)
+## Desenvolvimento local (PC sem Docker Desktop no Windows, com WSL)
 
 Fluxo típico: **Postgres no WSL** + **API no Windows**.
 
