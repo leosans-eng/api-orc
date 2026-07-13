@@ -1,5 +1,6 @@
 .env
 .venv/
+.devpath/
 __pycache__/
 *.py[cod]
 *.db
